@@ -35,7 +35,7 @@ let noticias = [
 // GET: listar todas as notícias
 app.get("/noticias", (req, res) => {
   res.json({
-    mensagem: "Notícias carregadas",
+    mensagem: "Notícias carregadas com sucesso - versão 1.1.0",
     total: noticias.length,
     noticias: noticias
   });
@@ -74,7 +74,7 @@ app.post("/noticias", (req, res) => {
 app.get("/", (req, res) => {
   res.json({
     status: "Backend de Notícias rodando com CI/CD",
-    versao: "1.0.1",
+    versao: "1.1.0",
     cors_ativo: true,
     frontend_integrado: true
   });
